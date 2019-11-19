@@ -1,0 +1,16 @@
+#program to check the no. is a member of fibonacci series
+
+import math
+n=int(input())
+flag=0
+
+#each term in fibo follows one or both the formula, (5*n*n + 4) or (5*n*n - 4) is a perfect square
+if (math.sqrt(5*n*n+4))%1==0:
+    flag=1
+if flag!=1 and (math.sqrt(5*n*n-4))%1==0:
+    flag=1
+
+if flag==1:
+    print("Yes")
+else:
+    print("No")
